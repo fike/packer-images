@@ -74,6 +74,8 @@ def create_box_repo
     puts 'Created box respository: ' + @boxname
   else
     puts 'Can\'t create ' + @boxname + ' repository'
+    puts "#{res.code} #{res.message}"
+    puts "#{res.body}"
     exit
   end
   create_box_version

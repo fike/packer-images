@@ -2,19 +2,19 @@
 
 **The templates here are used to build labs for research and just fun. :)**
 
-The boxes are available at [https://atlas.harshicorp.com/fike](https://atlas.hashicorp.com/fike/) and Git repository call [packer-images](https://github.com/fike/packer-images) at Github.
+The boxes are available at [https://atlas.harshicorp.com/fike](https://atlas.hashicorp.com/fike/) and Git repository is [packer-images](https://github.com/fike/packer-images) at Github.
 
-## What're images there?
+## What're images there
 
-* Debian Sid
-* Docker
+* [Debian Sid]((https://raw.githubusercontent.com/fike/packer-images/master/sid/README.md)
+* [Docker](https://raw.githubusercontent.com/fike/packer-images/master/docker/README.md)
 
 ## How to use that
 
 It's quite simple, just create a Vagrantfile.  
 
-	vagrant init fike/docker
-	vagrant init fike/sid
+	curl -LO https://raw.githubusercontent.com/fike/packer-images/master/docker/Vagrantfile; vagrant up
+	vagrant init fike/sid; vagrant up
 
 Some images might have a own **Vagrantfile** like Docker for support to test Swarm mode. Therefore, take look README into each image directory.
 
