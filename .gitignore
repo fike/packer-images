@@ -1,0 +1,9 @@
+*.iso
+.vagrant
+packer_cache
+.DS_Store
+*.swp
+*.box
+.atlas*
+*.vdi
+output-virtualbox-iso

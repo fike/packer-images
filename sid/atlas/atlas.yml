@@ -1,0 +1,8 @@
+box:
+  username: fike
+  boxname: sid
+  atlas_token:
+  short_description: Debian Sid image for developing
+  private: 0
+  provider: virtualbox
+  version: 1.0.0
