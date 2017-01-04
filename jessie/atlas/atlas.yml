@@ -1,0 +1,8 @@
+box:
+  username: fike
+  boxname: jessie
+  atlas_token:
+  short_description: Vanilla Debian Jessie with vboxfs at the same version between host and guest
+  private: 0
+  provider: virtualbox
+  version: 1.0.0

@@ -64,3 +64,5 @@ Usage: atlaswaiter.rb [options] PackerDir
 ```
 
 P.S.: Probably Atlas Waiter'll move for another its own repository if there is demand for more developing. ;)
+
+Thanks [@gutocarvalho](https://twitter.com/gutocarvalho) for helped to do that. :)

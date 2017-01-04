@@ -1,0 +1,8 @@
+box:
+  username: fike
+  boxname: postgresql
+  atlas_token:
+  short_description: PostgreSQL 9.6
+  private: 0
+  provider: virtualbox
+  version: 1.0.0

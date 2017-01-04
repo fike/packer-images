@@ -78,8 +78,7 @@ def create_box_repo
     puts "#{res.body}"
     exit
   end
-  create_box_version
-  create_box_provider
+
 end
 
 def create_box_version
@@ -91,9 +90,9 @@ def create_box_version
     http.request(req)
   end
   if res.code == '200'
-    puts 'Created ' + @boxname + 'box ' + @version
+    puts 'Created ' + @boxname + ' box ' + @version
   else
-    puts 'Can\'t removed ' + @boxname + ' repository'
+    puts 'Can\'t created ' + @boxname + ' repository'
     puts "#{res.code} #{res.message}"
     puts "#{res.body}"
     exit
@@ -111,7 +110,7 @@ def create_box_provider
   if res.code == '200'
     puts 'Created box ' + @provider
   else
-    puts 'Can\'t removed ' + @boxname + ' repository'
+    puts 'Can\'t created ' + @boxname + ' repository'
     puts "#{res.code} #{res.message}"
     puts "#{res.body}"
     exit
@@ -161,7 +160,14 @@ def update_box_description
     #req.body = JSON.pretty_generate(:description => @description_version, :description_markdown => @description_version,)
     http.request(req)
   end
-  puts res
+  if res.code == '200'
+    puts 'Updated ' + @boxname + ' short description'
+  else
+    puts 'Can\'t updated ' + @boxname + ' short description'
+    puts "#{res.code} #{res.message}"
+    puts "#{res.body}"
+    exit
+  end
 end
 
 def update_version_description
@@ -173,7 +179,14 @@ def update_version_description
     #req.body = JSON.pretty_generate(:description => @description_version, :description_markdown => @description_version,)
     http.request(req)
   end
-  puts res
+  if res.code == '200'
+    puts 'Updated ' + @boxname + ' short description'
+  else
+    puts 'Can\'t update ' + @boxname + 'short description'
+    puts "#{res.code} #{res.message}"
+    puts "#{res.body}"
+    exit
+  end
 end
 
 def upload_box
