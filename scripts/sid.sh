@@ -9,6 +9,3 @@ apt-get update
 apt-get upgrade -yf
 apt-get dist-upgrade -yf  && apt-get dist-upgrade -yf
 sed -e '/testing/d' -i /etc/apt/sources.list
-
-#remove old linux kernel
-#apt-get remove -yf linux-image-3.16.0-4-amd64
