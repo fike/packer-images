@@ -1,3 +1,4 @@
 ** This is a Debian Sid Box to developing **
 
-It contains packeging-dev debian package.
+* Removed packaging-dev
+* Updated packages

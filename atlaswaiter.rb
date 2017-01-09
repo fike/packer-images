@@ -19,19 +19,19 @@ optparser = OptionParser.new do|opts|
     options[:create] = c
   end
 
-  opts.on('-d', '--delete PackerDIr', 'Atlas box name to delete') do |d|
+  opts.on('-d', '--delete PackerDir', 'Atlas box name to delete') do |d|
     options[:delete] = d
   end
 
-  opts.on('-m', '--up-desc PackerDIr', 'Update the description of Atlas') do |ud|
+  opts.on('-m', '--up-desc PackerDir', 'Update the description of Atlas') do |ud|
     options[:updescription] = ud
   end
 
-  opts.on('-s', '--up-short-desc PackerDIr', 'Update the Short Description of Atlas Respoisitory') do |us|
+  opts.on('-s', '--up-short-desc PackerDir', 'Update the Short Description of Atlas Respoisitory') do |us|
     options[:upshortdesc] = us
   end
 
-  opts.on('-u', '--upload-box PackerDIr', 'Upload box to Atlas') do |up|
+  opts.on('-u', '--upload-box PackerDir', 'Upload box to Atlas') do |up|
     options[:upload] = up
   end
 
@@ -203,9 +203,6 @@ def upload_box
     uri = URI.parse(JSON.parse("#{res.body}").fetch('upload_path'))
     puts 'Fetched URI to upload:  ' + uri.to_s
     puts 'Uploading...'
-    #puts uri
-    #uri = URI.parse('http://127.0.0.1' + uri.path)
-    #puts uri
     req = Net::HTTP::Put.new(uri)
     res = Net::HTTP.start(uri.hostname, uri.port, :use_ssl => uri.scheme == 'https') do |http|
       req['Content-Length'] = File.size(@packerdir + '/' + @packerdir + '.box')

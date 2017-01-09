@@ -20,11 +20,17 @@ Some images might have a own **Vagrantfile** like Docker for support to test Swa
 
 ## Rebuild boxes
 
-For customize or create your own box, follow the directory structure.
+Basically, to customize or create you own box it's create or modify directory
+with Packer JSON file. Scripts and Debian-Intstaller Preseeds are in the common
+directories: *scripts*, *http*.
 
-* **scripts** - To put shell scripts to install or modify behavior. This is a common repository for reutilize to any box image creation.
+* **PackerDir** - Directory has Packer JSON file to build a Vagrant Box, create
+another directory and customize the packer.son.
 
-* **http** - Repository for all [preseed](https://wiki.debian.org/DebianInstaller/Preseed) files
+* **scripts** - To put shell scripts to install or modify behavior. This is a
+common repository for reutilize to any box image creation.
+
+* **http** - Repository for all [preseed](https://wiki.debian.org/DebianInstaller/Preseed)
 
 ## Manager Atlas box repository
 
@@ -50,7 +56,9 @@ box:
 
 ### Atlas Waiter
 
-This is a Ruby script to manager metadata and box on Atlas. The requirement to run is Ruby (tested 2.3 version).
+This is a Ruby script to manager metadata and box on Atlas. Requirements to run
+is Ruby (tested 2.3 version).
+
 
 ```
 vagrant@contrib-jessie:/vagrant$ ./atlaswaiter.rb
@@ -58,10 +66,14 @@ Usage: atlaswaiter.rb [options] PackerDir
     -c, --create PackerDir           Create Atlas Box Repository
     -d, --delete PackerDIr           Atlas box name to delete
     -m, --up-desc PackerDIr          Update the description of Atlas
-    -s, --up-short-desc PackerDIr    Update the Short Description of Atlas Respoisitory
+    -s, --up-short-desc PackerDIr    Update the Short Description of Atlas Repository
     -u, --upload-box PackerDIr       Upload box to Atlas
     -h, --help
 ```
+
+####
+
+The atlaswaiter.rb
 
 P.S.: Probably Atlas Waiter'll move for another its own repository if there is demand for more developing. ;)
 
