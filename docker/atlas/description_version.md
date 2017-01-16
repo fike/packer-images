@@ -1,1 +1,1 @@
-* Added Docker Compose
+* Updated to Jessie 8.7

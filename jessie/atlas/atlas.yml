@@ -5,4 +5,4 @@ box:
   short_description: Vanilla Debian Jessie with vboxfs at the same version between host and guest
   private: 0
   provider: virtualbox
-  version: 1.0.0
+  version: 1.1.0

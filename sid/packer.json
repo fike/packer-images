@@ -9,10 +9,10 @@
       "vm_name": "sid",
       "guest_os_type": "Debian_64",
       "iso_checksum_type": "sha256",
-      "iso_checksum": "9479c5c2df72ae3878116c43fb42eefae53d1fe363ce514a6afc8289064b9f5f",
+      "iso_checksum": "5a618df1be71e13c26611ff35b39d3b5f38644c445a4d849760420ccfb734d8e",
       "iso_urls": [
-        "debian-8.6.0-amd64-netinst.iso",
-        "http://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-8.6.0-amd64-netinst.iso"
+        "debian-8.7.0-amd64-netinst.iso",
+        "http://cdimage.debian.org/debian-cd/8.7.0/amd64/iso-cd/debian-8.7.0-amd64-netinst.iso"
       ],
       "http_directory": "http",
       "type": "virtualbox-iso",
