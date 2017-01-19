@@ -2,7 +2,7 @@ box:
   username: fike
   boxname: docker
   atlas_token:
-  short_description: Docker 1.12 image with Swarm mode support. Read the documentation
+  short_description: Docker 1.13 image with Swarm mode support. Further information, read https://github.com/fike/packer-images/tree/master/docker
   private: 0
   provider: virtualbox
-  version: 1.3.0
+  version: 1.4.0
