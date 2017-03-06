@@ -9,3 +9,4 @@ apt-get update
 apt-get upgrade -yf
 apt-get dist-upgrade -yf  && apt-get dist-upgrade -yf
 sed -e '/testing/d' -i /etc/apt/sources.list
+exit 0

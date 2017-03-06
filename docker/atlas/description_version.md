@@ -1,1 +1,1 @@
-* Upgrade Docker Engine to 1.13 version.
+* Upgrade Docker CE 17.03 version.

@@ -46,13 +46,13 @@ box:
   provider: virtualbox
   version: 20170103
 ```
-* description_box.md - Description to use into Atlas box repository
+* description_box.md - Description to use in Atlas box repository
 
-* description_version.md - Description to use any change version
+* description_version.md - Description to use to change all version
 
 ### Atlas Waiter
 
-This is a Ruby script to manager metadata and box on Atlas. Requirements to run
+This is a Ruby script to manage metadata and boxes on Atlas. Requirement to run
 is Ruby (tested 2.3 version).
 
 ```
@@ -70,6 +70,6 @@ Usage: atlaswaiter.rb [options] PackerDir
 
 The atlaswaiter.rb
 
-P.S.: Probably Atlas Waiter'll move for another its own repository if there is demand for more developing. ;)
+P.S.: Probably Atlas Waiter will move to on repository if there is demand for more developing. ;)
 
-Thanks [@gutocarvalho](https://twitter.com/gutocarvalho) for helped to do that. :)
+Thanks [@gutocarvalho](https://twitter.com/gutocarvalho) for doing that. :)
